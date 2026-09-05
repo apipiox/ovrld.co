@@ -719,6 +719,27 @@ button:disabled {
   background: linear-gradient(90deg, rgb(0 0 0 / 0.65), rgb(0 0 0 / 0.05));
   z-index: -1;
 }
+.brand-moment-graphic {
+  background: var(--ink);
+  border-block: 1px solid var(--line);
+}
+.brand-moment-graphic::after {
+  content: none;
+}
+.brand-moment-mark {
+  position: absolute;
+  right: clamp(-20px, 2vw, 40px);
+  bottom: -0.12em;
+  z-index: -1;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(220px, 30vw, 480px);
+  line-height: 1;
+  color: var(--line);
+  letter-spacing: -0.02em;
+  pointer-events: none;
+  user-select: none;
+}
 .brand-moment-content {
   height: 100%;
   display: flex;
@@ -1691,6 +1712,9 @@ button:disabled {
   }
   .brand-moment h2 {
     font-size: clamp(48px, 13vw, 84px);
+  }
+  .brand-moment-mark {
+    font-size: clamp(160px, 60vw, 320px);
   }
   .brand-moment-content > .eyebrow {
     font-size: 10px;

@@ -27,15 +27,27 @@ export function EditorialSection({
     </section>
   );
 }
-export function BrandMoment() {
+export function BrandMoment({
+  variant = 'photo',
+}: {
+  variant?: 'photo' | 'graphic';
+}) {
   return (
-    <section className="brand-moment">
-      <CampaignImage
-        media={{
-          image: '/images/campaign.webp',
-          alt: 'Concept campaign image of chalked hands preparing to lift a barbell',
-        }}
-      />
+    <section
+      className={`brand-moment ${variant === 'graphic' ? 'brand-moment-graphic' : ''}`}
+    >
+      {variant === 'graphic' ? (
+        <span className="brand-moment-mark" aria-hidden="true">
+          001
+        </span>
+      ) : (
+        <CampaignImage
+          media={{
+            image: '/images/campaign.webp',
+            alt: 'Concept campaign image of chalked hands preparing to lift a barbell',
+          }}
+        />
+      )}
       <div className="brand-moment-content container">
         <p className="eyebrow">NO SHORTCUTS. JUST THE WORK.</p>
         <h2 className="statement">
@@ -45,7 +57,9 @@ export function BrandMoment() {
         </h2>
         <div className="brand-moment-bottom">
           <span className="eyebrow lime">OVRLD YOUR LIMIT.</span>
-          <span className="eyebrow">001 / CAMPAIGN PREVIEW</span>
+          <span className="eyebrow">
+            {variant === 'graphic' ? '001 / THE FIRST DROP' : '001 / CAMPAIGN PREVIEW'}
+          </span>
         </div>
       </div>
     </section>

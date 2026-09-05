@@ -85,7 +85,7 @@ export default function CampaignPage() {
           before launch.
         </p>
       </section>
-      <BrandMoment />
+      <BrandMoment variant="graphic" />
       <section className="drop-detail section container">
         <div>
           <p className="eyebrow lime">LESS NOISE. MORE INTENTION.</p>
