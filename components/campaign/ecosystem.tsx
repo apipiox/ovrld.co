@@ -9,7 +9,7 @@ export function Ecosystem() {
         <Link href="/001">
           <span className="eyebrow lime">01 / PHYSICAL</span>
           <span>
-            WRAPS. STRAPS.
+            WRAPS. GRIPS.
             <br />
             THE SETUP.
           </span>

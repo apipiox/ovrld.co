@@ -33,6 +33,7 @@ export default async function ProductPage({
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
+  const otherProduct = products.find((item) => item.slug !== slug);
   return (
     <main id="main">
       <div className="container">
@@ -42,6 +43,14 @@ export default async function ProductPage({
           <Link href="/001">OVRLD 001</Link>
           <span>/</span>
           <span aria-current="page">{product.shortName.toUpperCase()}</span>
+          {otherProduct && (
+            <>
+              <span className="muted">·</span>
+              <Link href={`/gear/${otherProduct.slug}`}>
+                {otherProduct.shortName.toUpperCase()}
+              </Link>
+            </>
+          )}
         </nav>
         <ProductExperience product={product} />
       </div>

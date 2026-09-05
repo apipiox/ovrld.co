@@ -71,7 +71,7 @@ export const products: Product[] = [
     detailTopics: [
       {
         title: 'THE WRAP',
-        text: 'A wrist-focused addition to your training setup.',
+        text: 'Built for the pressing side of your training — bench, overhead, and the heavy sets where wrist position matters.',
       },
       {
         title: 'THE DETAILS',
@@ -84,7 +84,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: 'lifting-straps',
+    slug: 'grips',
     number: '001.02',
     drop: '001',
     name: 'OVRLD GRIPS',
@@ -107,7 +107,7 @@ export const products: Product[] = [
     detailTopics: [
       {
         title: 'THE GRIP',
-        text: 'A pulling accessory for the OVRLD training setup.',
+        text: 'Built for the pulling side of your training — deadlifts, rows, and the heavy pulls that test your grip.',
       },
       {
         title: 'THE DETAILS',

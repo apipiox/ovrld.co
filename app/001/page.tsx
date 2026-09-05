@@ -61,12 +61,21 @@ export default function CampaignPage() {
         </div>
       </section>
       <section className="colour-story section container">
-        <p className="eyebrow lime">FOUR COLOURWAYS / ONE IDENTITY</p>
-        <h2 className="statement">
-          BLACK AT HEART.
-          <br />
-          ROOM FOR EXPRESSION.
-        </h2>
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow lime">FOUR COLOURWAYS / ONE IDENTITY</p>
+            <h2 className="statement">
+              BLACK AT HEART.
+              <br />
+              ROOM FOR EXPRESSION.
+            </h2>
+          </div>
+          <p className="intro-line">
+            Black leads the range.
+            <br />
+            The rest are previews of what&rsquo;s coming.
+          </p>
+        </div>
         <div className="colour-story-grid">
           {colourways.map((colour, index) => (
             <div key={colour.id}>
@@ -95,13 +104,18 @@ export default function CampaignPage() {
             COMES FIRST.
           </h2>
           <p className="copy">
-            A considered starting point. Wrist wraps and grips, brought
-            together under OVRLD 001. Explore the concept details behind each
-            product.
+            Not two separate products. Wrist Wraps for the push, Grips for
+            the pull — two halves of the same intention, built under OVRLD
+            001.
           </p>
-          <Link href="/gear/wrist-wraps" className="text-link">
-            A CLOSER LOOK <ArrowUpRight aria-hidden="true" />
-          </Link>
+          <div className="actions">
+            <Link href="/gear/wrist-wraps" className="text-link">
+              WRIST WRAPS <ArrowUpRight aria-hidden="true" />
+            </Link>
+            <Link href="/gear/grips" className="text-link">
+              GRIPS <ArrowUpRight aria-hidden="true" />
+            </Link>
+          </div>
         </div>
         <CampaignImage
           media={{

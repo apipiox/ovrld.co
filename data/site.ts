@@ -10,14 +10,14 @@ export const releases = [
   {
     id: '001',
     subtitle: 'THE FIRST DROP',
-    productSlugs: ['wrist-wraps', 'lifting-straps'],
+    productSlugs: ['wrist-wraps', 'grips'],
   },
 ] as const;
 export const routes = [
   '/',
   '/001',
   '/gear/wrist-wraps',
-  '/gear/lifting-straps',
+  '/gear/grips',
   '/app',
   '/about',
 ];

@@ -12,6 +12,9 @@ export default function AboutPage() {
   return (
     <main id="main">
       <section className="about-hero section container">
+        <span className="about-mark" aria-hidden="true">
+          OVRLD
+        </span>
         <p className="eyebrow lime">OUR STORY / STILL BEING WRITTEN</p>
         <h1 className="display">
           IT STARTS
@@ -58,6 +61,10 @@ export default function AboutPage() {
       <section className="about-closing section container">
         <p className="eyebrow lime">THIS IS THE BEGINNING.</p>
         <h2 className="statement">OVRLD YOUR LIMIT.</h2>
+        <p className="copy">
+          Not a slogan. The standard behind everything we build — physical
+          or digital.
+        </p>
         <div className="actions">
           <Link href="/001" className="action">
             EXPLORE THE FIRST DROP <ArrowUpRight aria-hidden="true" />

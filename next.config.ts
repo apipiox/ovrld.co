@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
+const isStaticExport = process.env.OVRLD_STATIC_EXPORT === '1';
 const nextConfig: NextConfig = {
-  output: process.env.OVRLD_STATIC_EXPORT === '1' ? 'export' : undefined,
+  output: isStaticExport ? 'export' : undefined,
   poweredByHeader: false,
   images: {
     loader: 'custom',
@@ -9,5 +10,20 @@ const nextConfig: NextConfig = {
     imageSizes: [320],
     formats: ['image/webp'],
   },
+  // Redirects are unsupported under `output: 'export'`, so they're only
+  // registered for the standard Next.js/Vercel build.
+  ...(isStaticExport
+    ? {}
+    : {
+        async redirects() {
+          return [
+            {
+              source: '/gear/lifting-straps',
+              destination: '/gear/grips',
+              permanent: true,
+            },
+          ];
+        },
+      }),
 };
 export default nextConfig;

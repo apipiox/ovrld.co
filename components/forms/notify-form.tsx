@@ -106,7 +106,7 @@ export function NotifyForm({
               placeholder="you@example.com"
               disabled={state === 'submitting'}
               aria-invalid={state === 'validation'}
-              aria-describedby={`${id}-note${error ? ` ${id}-error` : ''}`}
+              aria-describedby={`${id}-expect ${id}-note${error ? ` ${id}-error` : ''}`}
             />
             <Button
               type="submit"
@@ -127,6 +127,9 @@ export function NotifyForm({
           </div>
           <p id={`${id}-error`} className="form-error" role="alert">
             {error}
+          </p>
+          <p id={`${id}-expect`} className="form-note">
+            You’ll only hear from us when OVRLD 001 is ready.
           </p>
           <p id={`${id}-note`} className="form-note">
             Preview form — emails are not stored yet.

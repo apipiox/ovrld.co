@@ -79,10 +79,7 @@ export function Navbar() {
                   <Link onClick={() => setOpen(false)} href="/gear/wrist-wraps">
                     001.01 / Wrist Wraps
                   </Link>
-                  <Link
-                    onClick={() => setOpen(false)}
-                    href="/gear/lifting-straps"
-                  >
+                  <Link onClick={() => setOpen(false)} href="/gear/grips">
                     001.02 / Grips
                   </Link>
                 </div>
