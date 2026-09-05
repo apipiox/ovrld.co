@@ -1472,47 +1472,25 @@ button:disabled {
 .app-page-hero {
   overflow: hidden;
 }
-.app-page-heading {
+.app-hero-showcase {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 64px;
   align-items: center;
 }
-.app-page-heading h1 {
-  font-size: clamp(112px, 16vw, 248px);
+.app-hero-showcase h1 {
+  font-size: clamp(88px, 11vw, 176px);
   margin-top: 32px;
+}
+.app-hero-showcase .app-screens {
+  padding: 0;
 }
 .app-page-lead {
-  font: clamp(32px, 4vw, 64px)/1.1 var(--font-display);
-  margin-bottom: 32px;
+  font: clamp(28px, 3vw, 48px)/1.1 var(--font-display);
+  margin: 24px 0;
 }
-.app-page-heading .status-label {
-  margin-top: 32px;
-}
-.app-screens.full {
-  gap: 48px;
-  margin-top: 80px;
-  padding: 24px 64px 0;
-}
-.full .app-screen {
-  width: 28%;
-  transform: none;
-}
-.full .phone-frame {
-  border-radius: 40px;
-}
-.full .screen-1 {
-  transform: translateY(-32px);
-}
-.full figcaption {
-  margin-top: 24px;
-}
-.full figcaption h2 {
-  font: 40px var(--font-display);
-}
-.full figcaption p {
-  color: var(--text-muted);
-  font-size: 14px;
+.app-hero-showcase .status-label {
+  margin-top: 8px;
 }
 .app-details {
   border-top: 1px solid var(--line);
@@ -1635,10 +1613,6 @@ button:disabled {
   .anatomy-callout > span {
     font-size: 10px;
     padding: 8px;
-  }
-  .app-screens.full {
-    padding-inline: 0;
-    gap: 32px;
   }
 }
 @media (max-width: 800px) {
@@ -1922,43 +1896,17 @@ button:disabled {
   .drop-detail .campaign-image {
     aspect-ratio: 1.1;
   }
-  .app-page-heading {
+  .app-hero-showcase {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .app-page-heading h1 {
-    font-size: clamp(112px, 28vw, 180px);
+  .app-hero-showcase h1 {
+    font-size: clamp(88px, 22vw, 140px);
     margin-top: 24px;
   }
   .app-page-lead {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  .app-screens.full {
-    overflow-x: auto;
-    justify-content: start;
-    gap: 24px;
-    margin-top: 48px;
-    padding: 32px 12px 16px;
-    scroll-snap-type: x mandatory;
-  }
-  .full .app-screen {
-    width: 72%;
-    max-width: 300px;
-    transform: none;
-    scroll-snap-align: center;
-  }
-  .full .phone-frame {
-    border-radius: 32px;
-  }
-  .full figcaption h2 {
     font-size: 32px;
-  }
-  .app-page-hero .full {
-    margin-left: calc(-1 * var(--gutter));
-    width: calc(100% + var(--gutter) * 2);
-    max-width: none;
-    padding-inline: var(--gutter);
+    margin: 20px 0;
   }
   .about-intro {
     grid-template-columns: 1fr;

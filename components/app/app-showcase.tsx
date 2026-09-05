@@ -21,9 +21,9 @@ const screens = [
     description: 'Know what changed.',
   },
 ];
-export function AppScreens({ all = false }: { all?: boolean }) {
+export function AppScreens() {
   return (
-    <div className={`app-screens ${all ? 'full' : ''}`}>
+    <div className="app-screens">
       {screens.map((screen, index) => (
         <figure key={screen.src} className={`app-screen screen-${index}`}>
           <div className="phone-frame">
@@ -35,12 +35,6 @@ export function AppScreens({ all = false }: { all?: boolean }) {
               sizes="(max-width: 700px) 48vw, 23vw"
             />
           </div>
-          {all && (
-            <figcaption>
-              <h2>{screen.label}</h2>
-              <p>{screen.description}</p>
-            </figcaption>
-          )}
         </figure>
       ))}
     </div>

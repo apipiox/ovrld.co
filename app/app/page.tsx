@@ -11,7 +11,7 @@ export default function AppPage() {
   return (
     <main id="main">
       <section className="app-page-hero section container">
-        <div className="app-page-heading">
+        <div className="app-hero-showcase">
           <div>
             <p className="eyebrow lime">OVRLD APP / COMING SOON</p>
             <h1 className="display">
@@ -21,8 +21,6 @@ export default function AppPage() {
               <br />
               <span className="lime">OVRLD.</span>
             </h1>
-          </div>
-          <div>
             <p className="app-page-lead">
               THE WORK ADDS UP.
               <br />
@@ -35,8 +33,8 @@ export default function AppPage() {
             </p>
             <span className="status-label">COMING SOON</span>
           </div>
+          <AppScreens />
         </div>
-        <AppScreens all />
       </section>
       <section className="app-details section container">
         <p className="eyebrow lime">BUILT AROUND YOUR TRAINING</p>
