@@ -22,8 +22,12 @@ export default function CampaignPage() {
           </div>
         </div>
         <div className="product-grid">
-          {products.map((product) => (
-            <ProductCard key={product.slug} product={product} />
+          {products.map((product, index) => (
+            <ProductCard
+              key={product.slug}
+              product={product}
+              priority={index === 0}
+            />
           ))}
         </div>
       </section>
@@ -49,7 +53,6 @@ export default function CampaignPage() {
             image: '/images/lifting-straps.webp',
             alt: 'Black OVRLD grip concepts in a studio campaign composition',
           }}
-          priority
           sizes="92vw"
         />
         <div className="image-credit eyebrow">

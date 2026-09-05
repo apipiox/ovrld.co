@@ -2,7 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import type { Product } from '@/data/products';
-export function ProductCard({ product }: { product: Product }) {
+export function ProductCard({
+  product,
+  priority = false,
+}: {
+  product: Product;
+  priority?: boolean;
+}) {
   return (
     <Link href={`/gear/${product.slug}`} className="product-card">
       <div className="product-card-image">
@@ -10,6 +16,7 @@ export function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.imageAlt}
           fill
+          preload={priority}
           sizes="(max-width: 700px) 100vw, 46vw"
         />
         <span className="product-card-number eyebrow">
