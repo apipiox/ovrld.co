@@ -47,7 +47,7 @@ export default async function ProductPage({
       </div>
       <section className="product-story section container">
         <p className="eyebrow lime">{product.number} / BUILT FOR THE WORK</p>
-        <h2 className="display">{product.statement}</h2>
+        <h2 className="statement">{product.statement}</h2>
         <div className="detail-topics">
           {product.detailTopics.map((topic, index) => (
             <div key={topic.title}>

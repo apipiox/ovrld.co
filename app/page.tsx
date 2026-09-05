@@ -12,7 +12,7 @@ import { products } from '@/data/products';
 import { pageMetadata } from '@/lib/metadata';
 export const metadata = pageMetadata(
   'OVRLD YOUR LIMIT.',
-  'Performance gear and training software built for the work. Discover OVRLD 001: Wrist Wraps and Lifting Straps.',
+  'Performance gear and training software built for the work. Discover OVRLD 001: Wrist Wraps and Grips.',
   '/',
 );
 export default function Home() {

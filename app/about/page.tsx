@@ -36,7 +36,7 @@ export default function AboutPage() {
             <p>
               Now, that same focus is extending to the equipment used in the
               work itself. OVRLD 001 introduces our first wrist wraps and
-              lifting straps.
+              grips.
             </p>
             <p>
               We’re an emerging performance brand. The ambition is simple:
@@ -57,7 +57,7 @@ export default function AboutPage() {
       <Ecosystem />
       <section className="about-closing section container">
         <p className="eyebrow lime">THIS IS THE BEGINNING.</p>
-        <h2 className="title">OVRLD YOUR LIMIT.</h2>
+        <h2 className="statement">OVRLD YOUR LIMIT.</h2>
         <div className="actions">
           <Link href="/001" className="action">
             EXPLORE THE FIRST DROP <ArrowUpRight aria-hidden="true" />

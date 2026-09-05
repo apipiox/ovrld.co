@@ -8,20 +8,33 @@ import { LaunchSection } from '@/components/campaign/launch-section';
 import { pageMetadata } from '@/lib/metadata';
 export const metadata = pageMetadata(
   'OVRLD 001 — The First Drop',
-  'Two essentials. One intention. Discover OVRLD Wrist Wraps and Lifting Straps, our debut performance gear release.',
+  'Two essentials. One intention. Discover OVRLD Wrist Wraps and Grips, our debut performance gear release.',
   '/001',
 );
 export default function CampaignPage() {
   return (
     <main id="main">
+      <section className="section container">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow lime">THE RELEASE</p>
+            <h1 className="title">START WITH THE ESSENTIALS.</h1>
+          </div>
+        </div>
+        <div className="product-grid">
+          {products.map((product) => (
+            <ProductCard key={product.slug} product={product} />
+          ))}
+        </div>
+      </section>
       <section className="drop-hero container">
         <div className="drop-heading">
           <p className="eyebrow lime">OVRLD / RELEASE 001</p>
           <span className="eyebrow muted">PREORDERS COMING SOON</span>
         </div>
-        <h1 className="display">
+        <h2 className="display">
           OVRLD <span>001</span>
-        </h1>
+        </h2>
         <div className="drop-heading">
           <h2>THE FIRST DROP.</h2>
           <p className="copy">
@@ -34,32 +47,19 @@ export default function CampaignPage() {
           className="drop-cover"
           media={{
             image: '/images/lifting-straps.webp',
-            alt: 'Black OVRLD lifting strap concepts in a studio campaign composition',
+            alt: 'Black OVRLD grip concepts in a studio campaign composition',
           }}
           priority
           sizes="92vw"
         />
         <div className="image-credit eyebrow">
-          <span>001.02 / LIFTING STRAPS</span>
+          <span>001.02 / GRIPS</span>
           <span>CONCEPT PREVIEW</span>
-        </div>
-      </section>
-      <section className="section container">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow lime">THE RELEASE</p>
-            <h2 className="title">START WITH THE ESSENTIALS.</h2>
-          </div>
-        </div>
-        <div className="product-grid">
-          {products.map((product) => (
-            <ProductCard key={product.slug} product={product} />
-          ))}
         </div>
       </section>
       <section className="colour-story section container">
         <p className="eyebrow lime">FOUR COLOURWAYS / ONE IDENTITY</p>
-        <h2 className="title">
+        <h2 className="statement">
           BLACK AT HEART.
           <br />
           ROOM FOR EXPRESSION.
@@ -86,13 +86,13 @@ export default function CampaignPage() {
       <section className="drop-detail section container">
         <div>
           <p className="eyebrow lime">LESS NOISE. MORE INTENTION.</p>
-          <h2 className="title">
+          <h2 className="statement">
             THE WORK
             <br />
             COMES FIRST.
           </h2>
           <p className="copy">
-            A considered starting point. Wrist wraps and lifting straps, brought
+            A considered starting point. Wrist wraps and grips, brought
             together under OVRLD 001. Explore the concept details behind each
             product.
           </p>

@@ -87,16 +87,16 @@ export const products: Product[] = [
     slug: 'lifting-straps',
     number: '001.02',
     drop: '001',
-    name: 'OVRLD LIFTING STRAPS',
-    shortName: 'Lifting Straps',
+    name: 'OVRLD GRIPS',
+    shortName: 'Grips',
     statement: 'GRIP SHOULDN’T END THE SET.',
     description:
-      'Made for the pulling side of your training. Meet OVRLD Lifting Straps, the second essential in our first drop.',
+      'Made for the pulling side of your training. Meet OVRLD Grips, the second essential in our first drop.',
     story:
-      'A bar in your hands. Another set ahead. Our first lifting straps are part of a simple idea: give the work your full attention.',
+      'A bar in your hands. Another set ahead. Our first grips are part of a simple idea: give the work your full attention.',
     image: '/images/lifting-straps.webp',
     imageAlt:
-      'Concept preview of black OVRLD lifting grips with wrist cuffs and stitched palm flaps',
+      'Concept preview of black OVRLD grips with wrist cuffs and stitched palm flaps',
     availability: { status: 'coming-soon' },
     colourways,
     anatomy: [

@@ -83,7 +83,7 @@ export function Navbar() {
                     onClick={() => setOpen(false)}
                     href="/gear/lifting-straps"
                   >
-                    001.02 / Lifting Straps
+                    001.02 / Grips
                   </Link>
                 </div>
               </nav>

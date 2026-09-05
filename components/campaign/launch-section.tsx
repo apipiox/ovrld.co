@@ -5,7 +5,7 @@ export function LaunchSection() {
       <div className="container launch-grid">
         <div>
           <p className="eyebrow lime">OVRLD 001 / GET READY</p>
-          <h2 className="title">
+          <h2 className="statement">
             001 IS
             <br />
             COMING.

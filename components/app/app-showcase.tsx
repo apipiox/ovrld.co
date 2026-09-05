@@ -52,7 +52,7 @@ export function AppShowcase() {
       <div className="container">
         <div className="app-heading">
           <p className="eyebrow lime">THE DIGITAL SIDE OF OVRLD</p>
-          <h2 className="title">
+          <h2 className="statement">
             GEAR FOR THE WORK.
             <br />
             <span className="muted">SOFTWARE FOR THE PROGRESS.</span>

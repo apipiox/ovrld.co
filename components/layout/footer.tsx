@@ -15,7 +15,7 @@ export function Footer() {
             Wrist Wraps <ArrowUpRight />
           </Link>
           <Link href="/gear/lifting-straps">
-            Lifting Straps <ArrowUpRight />
+            Grips <ArrowUpRight />
           </Link>
           <Link href="/001">
             The First Drop <ArrowUpRight />

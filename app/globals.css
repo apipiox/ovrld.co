@@ -160,16 +160,25 @@ button:disabled {
 .display {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 0.87;
+}
+.statement {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(40px, 4.5vw, 72px);
+  letter-spacing: -0.01em;
+  line-height: 1;
 }
 .title {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: clamp(48px, 6vw, 96px);
-  letter-spacing: -0.015em;
-  line-height: 0.97;
+  font-weight: 600;
+  font-size: clamp(48px, 4.6vw, 84px);
+  letter-spacing: -0.005em;
+  line-height: 1.05;
 }
 .copy {
   max-width: 440px;
@@ -637,7 +646,7 @@ button:disabled {
   align-items: center;
 }
 .mobile-menu-tagline {
-  margin-top: auto;
+  margin-top: 64px;
   font: 40px/0.95 var(--font-display);
 }
 .hero-image-cta {
@@ -719,7 +728,7 @@ button:disabled {
   padding-block: 48px;
 }
 .brand-moment h2 {
-  font-size: clamp(96px, 13vw, 208px);
+  font-size: clamp(56px, 8vw, 128px);
   margin-top: 32px;
   max-width: 1000px;
 }
@@ -749,12 +758,9 @@ button:disabled {
   align-self: center;
 }
 .editorial-copy > .eyebrow:first-child {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
-.editorial-copy > .eyebrow:nth-child(2) {
-  margin-bottom: 16px;
-}
-.editorial-copy .title {
+.editorial-copy .statement {
   font-size: clamp(52px, 5.2vw, 88px);
   max-width: 580px;
 }
@@ -774,7 +780,7 @@ button:disabled {
 .app-heading > .eyebrow {
   margin-bottom: 24px;
 }
-.app-heading .title {
+.app-heading .statement {
   font-size: clamp(40px, 4.8vw, 80px);
 }
 .app-showcase-grid {
@@ -859,7 +865,7 @@ button:disabled {
 .ecosystem > .eyebrow {
   margin-bottom: 24px;
 }
-.ecosystem > .title {
+.ecosystem > .statement {
   font-size: clamp(40px, 5vw, 80px);
 }
 .ecosystem-diagram {
@@ -917,7 +923,7 @@ button:disabled {
   margin-bottom: 24px;
 }
 .launch-grid h2 {
-  font-size: clamp(80px, 9vw, 144px);
+  font-size: clamp(56px, 6.5vw, 104px);
 }
 .launch-right > p {
   font-size: 18px;
@@ -1283,8 +1289,8 @@ button:disabled {
 .product-story > .eyebrow {
   margin-bottom: 32px;
 }
-.product-story > .display {
-  font-size: clamp(72px, 11vw, 176px);
+.product-story > .statement {
+  font-size: clamp(48px, 6vw, 96px);
   max-width: 1200px;
 }
 .detail-topics {
@@ -1388,12 +1394,12 @@ button:disabled {
   gap: 32px;
   align-items: center;
 }
-.drop-hero h1 {
+.drop-hero .display {
   font-size: clamp(100px, 22vw, 360px);
   white-space: nowrap;
   margin: 32px 0 40px;
 }
-.drop-hero h1 span {
+.drop-hero .display span {
   color: var(--lime);
 }
 .drop-heading h2 {
@@ -1422,7 +1428,7 @@ button:disabled {
 .colour-story > .eyebrow {
   margin-bottom: 24px;
 }
-.colour-story .title {
+.colour-story .statement {
   font-size: clamp(48px, 6vw, 96px);
 }
 .colour-story-grid {
@@ -1513,6 +1519,12 @@ button:disabled {
 }
 .app-details > .eyebrow {
   margin-bottom: 24px;
+}
+.app-details .detail-topics > div > .eyebrow {
+  display: inline-block;
+  border: 1px solid #58614b;
+  padding: 4px 8px;
+  color: var(--lime);
 }
 .app-closing {
   background: var(--graphite);
@@ -1664,8 +1676,8 @@ button:disabled {
   .product-information .notify-submit {
     width: auto;
   }
-  .product-story > .display {
-    font-size: clamp(72px, 12vw, 120px);
+  .product-story > .statement {
+    font-size: clamp(40px, 10vw, 72px);
   }
 }
 @media (max-width: 700px) {
@@ -1700,7 +1712,7 @@ button:disabled {
     height: 520px;
   }
   .brand-moment h2 {
-    font-size: clamp(80px, 17vw, 120px);
+    font-size: clamp(48px, 13vw, 84px);
   }
   .brand-moment-content > .eyebrow {
     font-size: 10px;
@@ -1729,7 +1741,7 @@ button:disabled {
   .editorial-copy > .eyebrow:first-child {
     margin-bottom: 32px;
   }
-  .editorial-copy .title {
+  .editorial-copy .statement {
     font-size: 64px;
   }
   .app-showcase-grid {
@@ -1751,7 +1763,7 @@ button:disabled {
     border-radius: 24px;
     border-width: 2px;
   }
-  .app-heading .title {
+  .app-heading .statement {
     font-size: clamp(38px, 8vw, 58px);
   }
   .app-points {
@@ -1802,7 +1814,7 @@ button:disabled {
     gap: 40px;
   }
   .launch-grid h2 {
-    font-size: 96px;
+    font-size: 72px;
   }
   .launch-right > p {
     font-size: 16px;
@@ -1879,7 +1891,7 @@ button:disabled {
   .drop-heading > .eyebrow {
     font-size: 9px;
   }
-  .drop-hero h1 {
+  .drop-hero .display {
     font-size: 23vw;
     margin: 32px 0;
   }

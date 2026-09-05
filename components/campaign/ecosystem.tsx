@@ -4,7 +4,7 @@ export function Ecosystem() {
   return (
     <section className="ecosystem section container">
       <p className="eyebrow muted">THE OVRLD ECOSYSTEM</p>
-      <h2 className="title">ONE BRAND. EVERY REP.</h2>
+      <h2 className="statement">ONE BRAND. EVERY REP.</h2>
       <div className="ecosystem-diagram">
         <Link href="/001">
           <span className="eyebrow lime">01 / PHYSICAL</span>

@@ -74,7 +74,7 @@ export default function AppPage() {
       </section>
       <section className="app-closing section container">
         <p className="eyebrow muted">PHYSICAL TOOLS. DIGITAL PROGRESS.</p>
-        <h2 className="title">
+        <h2 className="statement">
           SAME INTENTION.
           <br />
           DIFFERENT TOOLS.

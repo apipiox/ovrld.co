@@ -17,8 +17,7 @@ export function EditorialSection({
       />
       <div className="editorial-copy">
         <p className="eyebrow lime">{product.number} / PERFORMANCE GEAR</p>
-        <p className="eyebrow muted">{product.name}</p>
-        <h2 className="title">{product.statement}</h2>
+        <h2 className="statement">{product.statement}</h2>
         <p className="copy">{product.story}</p>
         <Link className="text-link" href={`/gear/${product.slug}`}>
           EXPLORE {product.shortName.toUpperCase()}{' '}
@@ -39,7 +38,7 @@ export function BrandMoment() {
       />
       <div className="brand-moment-content container">
         <p className="eyebrow">NO SHORTCUTS. JUST THE WORK.</p>
-        <h2 className="display">
+        <h2 className="statement">
           BUILT FOR
           <br />
           HEAVY WORK.
