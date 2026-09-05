@@ -44,20 +44,20 @@ export default function CampaignPage() {
           <p className="copy">
             The beginning of the physical side of OVRLD.
             <br />
-            Two essentials for the work ahead.
+            Built around the essentials.
           </p>
         </div>
         <CampaignImage
           className="drop-cover"
           media={{
-            image: '/images/lifting-straps.webp',
-            alt: 'Black OVRLD grip concepts in a studio campaign composition',
+            image: '/images/campaign.webp',
+            alt: 'Concept campaign image of chalked hands preparing to lift a barbell',
           }}
           sizes="92vw"
         />
         <div className="image-credit eyebrow">
-          <span>001.02 / GRIPS</span>
-          <span>CONCEPT PREVIEW</span>
+          <span>001 / THE FIRST DROP</span>
+          <span>CAMPAIGN PREVIEW</span>
         </div>
       </section>
       <section className="colour-story section container">
@@ -71,7 +71,7 @@ export default function CampaignPage() {
           {colourways.map((colour, index) => (
             <div key={colour.id}>
               <div
-                className="colour-story-sample"
+                className={`colour-story-sample${colour.id === 'black' ? ' is-primary' : ''}`}
                 style={{ background: `var(${colour.token})` }}
               >
                 <span className="colour-story-index">0{index + 1}</span>

@@ -1443,6 +1443,10 @@ button:disabled {
   position: relative;
   margin-bottom: 16px;
 }
+.colour-story-sample.is-primary {
+  outline: 2px solid var(--lime);
+  outline-offset: 4px;
+}
 .colour-story-index {
   position: absolute;
   left: 16px;
