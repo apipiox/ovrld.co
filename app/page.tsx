@@ -43,12 +43,13 @@ export default function Home() {
           </p>
         </Reveal>
       </section>
+      <Reveal>
+        <EditorialSection product={products[0]} />
+      </Reveal>
       <BrandMoment />
-      {products.map((product, index) => (
-        <Reveal key={product.slug}>
-          <EditorialSection product={product} reverse={index === 1} />
-        </Reveal>
-      ))}
+      <Reveal>
+        <EditorialSection product={products[1]} reverse />
+      </Reveal>
       <AppShowcase />
       <Ecosystem />
       <LaunchSection />
